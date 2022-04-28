@@ -1,0 +1,3 @@
+kubectl -n teamlgo get secret client-myteamglo-com --output=jsonpath={.data.tls\\.crt} | base64 --decode > /root/teamglo/certificates/server.crt
+
+kubectl -n teamglo get secret client-myteamglo-com --output=jsonpath={.data.tls\\.key} | base64 --decode > /root/teamglo/certificates/server.key
